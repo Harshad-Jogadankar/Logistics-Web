@@ -1,0 +1,82 @@
+.us{
+      position:relative;
+      float:left;
+      left:30px;
+
+  }
+  .uk{
+    position:relative;
+    float:left;
+    left:100px;
+
+
+
+  }
+  .india{
+    position:relative;
+    float:left;
+    left:200px;
+
+  }
+  .france{
+    position:relative;
+    left:300px;
+    top:30px;
+  }
+  .china{
+    position:relative;
+    float:left;
+    top:100px;
+    right:500px;
+
+  }
+  .japan{
+    position:relative;
+    float:left;
+    right:420px;
+    top:100px;
+
+  }
+  .russia{
+      float:left;
+      position: relative;
+      top:100px;
+      right:192px;
+  }
+  .foot{
+      text-align:center;
+      position:absolute;
+      left:650px;
+      top:700px;
+      font-size: 20px;
+      font-weight: bold;
+
+  }
+  .brazil{
+    position:relative;
+    top:125px;
+
+
+  }
+  .france{
+    position:relative;
+    right:150px;
+    
+
+  }
+  window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("navbar");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
